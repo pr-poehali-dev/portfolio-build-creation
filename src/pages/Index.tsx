@@ -64,21 +64,21 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
               <Icon name="Building2" className="h-8 w-8 text-orange-500" />
-              <span className="text-2xl font-bold text-navy-700">СтройМастер</span>
+              <span className="text-2xl font-bold text-dark-900">СтройМастер</span>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#portfolio" className="text-gray-600 hover:text-orange-500 transition-colors">Портфолио</a>
-              <a href="#services" className="text-gray-600 hover:text-orange-500 transition-colors">Услуги</a>
-              <a href="#process" className="text-gray-600 hover:text-orange-500 transition-colors">Процесс</a>
-              <a href="#reviews" className="text-gray-600 hover:text-orange-500 transition-colors">Отзывы</a>
-              <a href="#contacts" className="text-gray-600 hover:text-orange-500 transition-colors">Контакты</a>
+              <a href="#portfolio" className="text-gray-600 hover:text-accent-600 transition-colors font-medium">Портфолио</a>
+              <a href="#services" className="text-gray-600 hover:text-accent-600 transition-colors font-medium">Услуги</a>
+              <a href="#process" className="text-gray-600 hover:text-accent-600 transition-colors font-medium">Процесс</a>
+              <a href="#reviews" className="text-gray-600 hover:text-accent-600 transition-colors font-medium">Отзывы</a>
+              <a href="#contacts" className="text-gray-600 hover:text-accent-600 transition-colors font-medium">Контакты</a>
             </nav>
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+            <Button className="bg-accent-500 hover:bg-accent-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 hover:shadow-lg">
               Обсудить проект
             </Button>
           </div>
@@ -86,22 +86,22 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-500 via-orange-600 to-navy-700 text-white py-20 animate-gradient-shift bg-[length:400%_400%]">
+      <section className="relative bg-gradient-to-br from-dark-900 via-dark-800 to-accent-600 text-white py-24 animate-gradient-shift bg-[length:400%_400%]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-bold mb-8 animate-fade-in tracking-tight">
             Строим будущее
-            <span className="block text-yellow-300">вместе с вами</span>
+            <span className="block text-accent-400">вместе с вами</span>
           </h1>
-          <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in">
+          <p className="text-xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in leading-relaxed">
             Профессиональное строительство и реконструкция объектов любой сложности. 
             От проектирования до сдачи под ключ.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
-            <Button size="lg" className="bg-white text-navy-700 hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-dark-900 hover:bg-gray-100 px-8 py-4 font-semibold">
               <Icon name="Eye" className="mr-2 h-5 w-5" />
               Посмотреть работы
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-navy-700">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-dark-900 px-8 py-4 font-semibold">
               <Icon name="Phone" className="mr-2 h-5 w-5" />
               Связаться с нами
             </Button>
@@ -114,7 +114,7 @@ export default function Index() {
       <section id="portfolio" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold text-navy-700 mb-4">Наши проекты</h2>
+            <h2 className="text-4xl font-bold text-dark-900 mb-4">Наши проекты</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Посмотрите, как мы преображаем пространства и создаем архитектурные шедевры
             </p>
@@ -149,13 +149,13 @@ export default function Index() {
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <Badge variant="outline" className="text-orange-500 border-orange-500">
+                    <Badge variant="outline" className="text-accent-600 border-accent-600">
                       {project.category}
                     </Badge>
                   </div>
-                  <h3 className="text-xl font-bold text-navy-700 mb-2">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-dark-900 mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
-                  <Button variant="outline" className="w-full group-hover:bg-orange-500 group-hover:text-white transition-colors">
+                  <Button variant="outline" className="w-full group-hover:bg-accent-500 group-hover:text-white transition-colors border-gray-300 hover:border-accent-500">
                     Подробнее
                     <Icon name="ArrowRight" className="ml-2 h-4 w-4" />
                   </Button>
@@ -170,7 +170,7 @@ export default function Index() {
       <section id="services" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold text-navy-700 mb-4">Наши услуги</h2>
+            <h2 className="text-4xl font-bold text-dark-900 mb-4">Наши услуги</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Полный спектр строительных услуг от проектирования до финальной отделки
             </p>
@@ -180,10 +180,10 @@ export default function Index() {
             {services.map((service, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardContent className="p-8">
-                  <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="bg-accent-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                     <Icon name={service.icon as any} className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-navy-700 mb-3">{service.title}</h3>
+                  <h3 className="text-xl font-bold text-dark-900 mb-3">{service.title}</h3>
                   <p className="text-gray-600">{service.description}</p>
                 </CardContent>
               </Card>
@@ -196,7 +196,7 @@ export default function Index() {
       <section id="process" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold text-navy-700 mb-4">Процесс работы</h2>
+            <h2 className="text-4xl font-bold text-dark-900 mb-4">Процесс работы</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Четкий план действий от идеи до реализации проекта
             </p>
@@ -206,14 +206,14 @@ export default function Index() {
             {workProcess.map((step, index) => (
               <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="relative">
-                  <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                  <div className="bg-accent-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg">
                     {step.step}
                   </div>
                   {index < workProcess.length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-orange-200 transform translate-x-4"></div>
+                    <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-accent-200 transform translate-x-4"></div>
                   )}
                 </div>
-                <h3 className="text-xl font-bold text-navy-700 mb-3">{step.title}</h3>
+                <h3 className="text-xl font-bold text-dark-900 mb-3">{step.title}</h3>
                 <p className="text-gray-600">{step.description}</p>
               </div>
             ))}
@@ -225,7 +225,7 @@ export default function Index() {
       <section id="reviews" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold text-navy-700 mb-4">Отзывы клиентов</h2>
+            <h2 className="text-4xl font-bold text-dark-900 mb-4">Отзывы клиентов</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Что говорят о нас наши клиенты
             </p>
@@ -242,11 +242,11 @@ export default function Index() {
                   </div>
                   <p className="text-gray-700 mb-6 text-lg italic">"{testimonial.text}"</p>
                   <div className="flex items-center">
-                    <div className="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                    <div className="bg-accent-500 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                       {testimonial.name.charAt(0)}
                     </div>
                     <div>
-                      <h4 className="font-bold text-navy-700">{testimonial.name}</h4>
+                      <h4 className="font-bold text-dark-900">{testimonial.name}</h4>
                       <p className="text-gray-600 text-sm">{testimonial.position}</p>
                     </div>
                   </div>
@@ -258,7 +258,7 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contacts" className="py-20 bg-navy-700 text-white">
+      <section id="contacts" className="py-20 bg-dark-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4">Свяжитесь с нами</h2>
@@ -272,19 +272,19 @@ export default function Index() {
               <h3 className="text-2xl font-bold mb-6">Контактная информация</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <Icon name="Phone" className="h-6 w-6 text-orange-500" />
+                  <Icon name="Phone" className="h-6 w-6 text-accent-400" />
                   <span className="text-lg">+7 (910) 413-53-73</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Icon name="Mail" className="h-6 w-6 text-orange-500" />
+                  <Icon name="Mail" className="h-6 w-6 text-accent-400" />
                   <span className="text-lg">info@stroymaster.ru</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Icon name="MapPin" className="h-6 w-6 text-orange-500" />
+                  <Icon name="MapPin" className="h-6 w-6 text-accent-400" />
                   <span className="text-lg">Москва, ул. Строительная, 15</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Icon name="Clock" className="h-6 w-6 text-orange-500" />
+                  <Icon name="Clock" className="h-6 w-6 text-accent-400" />
                   <span className="text-lg">Пн-Пт: 9:00-18:00</span>
                 </div>
               </div>
@@ -292,30 +292,30 @@ export default function Index() {
 
             <Card className="animate-scale-in">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-navy-700 mb-6">Оставьте заявку</h3>
+                <h3 className="text-2xl font-bold text-dark-900 mb-6">Оставьте заявку</h3>
                 <form className="space-y-4">
                   <div>
                     <input 
                       type="text" 
                       placeholder="Ваше имя" 
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all duration-200"
                     />
                   </div>
                   <div>
                     <input 
                       type="tel" 
                       placeholder="Телефон" 
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all duration-200"
                     />
                   </div>
                   <div>
                     <textarea 
                       placeholder="Опишите ваш проект" 
                       rows={4}
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-transparent resize-none transition-all duration-200"
                     ></textarea>
                   </div>
-                  <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3">
+                  <Button className="w-full bg-accent-500 hover:bg-accent-600 text-white py-3 font-semibold transition-all duration-200 hover:shadow-lg">
                     Отправить заявку
                     <Icon name="Send" className="ml-2 h-4 w-4" />
                   </Button>
@@ -327,12 +327,12 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-navy-800 text-white py-12">
+      <footer className="bg-dark-800 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Icon name="Building2" className="h-8 w-8 text-orange-500" />
+                <Icon name="Building2" className="h-8 w-8 text-accent-400" />
                 <span className="text-2xl font-bold">СтройМастер</span>
               </div>
               <p className="text-gray-300">
@@ -360,13 +360,13 @@ export default function Index() {
             <div>
               <h4 className="text-lg font-bold mb-4">Социальные сети</h4>
               <div className="flex space-x-4">
-                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-orange-500">
+                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-accent-400 transition-colors">
                   <Icon name="Facebook" className="h-5 w-5" />
                 </Button>
-                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-orange-500">
+                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-accent-400 transition-colors">
                   <Icon name="Instagram" className="h-5 w-5" />
                 </Button>
-                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-orange-500">
+                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-accent-400 transition-colors">
                   <Icon name="Youtube" className="h-5 w-5" />
                 </Button>
               </div>

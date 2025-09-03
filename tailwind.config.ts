@@ -19,13 +19,15 @@ export default {
 		},
 		extend: {
 			colors: {
-				orange: {
-					500: '#FF6B35',
-					600: '#E55A2B'
+				accent: {
+					400: '#60A5FA',
+					500: '#3B82F6', 
+					600: '#2563EB',
+					700: '#1D4ED8'
 				},
-				navy: {
-					700: '#2C3E50',
-					800: '#34495E'
+				dark: {
+					800: '#1F2937',
+					900: '#111827'
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
