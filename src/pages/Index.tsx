@@ -8,11 +8,11 @@ export default function Index() {
   const projects = [
     {
       id: 1,
-      title: "Жилой комплекс «Европа»",
-      description: "Полная реконструкция 15-этажного здания с современными технологиями",
-      beforeImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
-      category: "Жилые здания"
+      title: "Кафе-кондитерская в ТЦ",
+      description: "Полная трансформация помещения от коробки до готового заведения с современным дизайном",
+      beforeImage: "https://cdn.poehali.dev/files/01fd94a6-0c05-4f48-aeaa-bfb9f30a1059.jpeg",
+      afterImage: "https://cdn.poehali.dev/files/efaae247-4d9a-4f48-ac46-b1c849f3b391.jpeg",
+      category: "Коммерческие помещения"
     },
     {
       id: 2,
